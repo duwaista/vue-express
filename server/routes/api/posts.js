@@ -32,7 +32,6 @@ router.delete('/:id', async (req, res)=>{
     res.status(200).send()
 })
 
-
 async function loadPostCollection() {
   const client = await MongoClient.connect(url, { useNewUrlParser: true, useUnifiedTopology: true })
 
